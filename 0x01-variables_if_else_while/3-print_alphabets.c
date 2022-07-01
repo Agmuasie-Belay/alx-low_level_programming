@@ -5,18 +5,22 @@
  *                                                                                                                                      
  * Return: Always 0 (Success)                                                                                                           
  */                                                                                                                                     
-int main(void)                                                                                                                          
-{                                                                                                                                       
-        int i;                                                                                                                          
-                                                                                                                                        
-        for( i = 97;i < 123; i++ )                                                                                                      
-        {                                                                                                                               
-                putchar((char)i);                                                                                                       
-        }                                                                                                                               
-        for( i = 65;i <97; i++ )                                                                                                        
-        {                                                                                                                               
-                putchar((char)i);                                                                                                       
-        }                                                                                                                               
-        putchar('\n');                                                                                                                  
-                                                                                                                                        
-        return (0);                                                                                                                     
+int main(void)
+{
+	char c = 'a';
+	char d = 'A';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	while (d <= 'Z')
+	{
+		putchar(d);
+		d++;
+	}
+	putchar('\n');
+	return (0);
+
+}
