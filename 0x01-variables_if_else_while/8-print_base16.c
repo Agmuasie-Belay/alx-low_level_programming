@@ -14,6 +14,13 @@ int main(void)
 	putchar(c);
 	c++;
 	}
+	c = 97;
+	while (c <= 102)
+	{
+	putchar((char)c);
+	c++;
+	}
+	
 	putchar('\n');
 	return (0);
 }
