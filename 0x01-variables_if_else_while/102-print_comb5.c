@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
@@ -9,43 +8,36 @@
  */
 int main(void)
 {
-	int p = 48, q = 48, y = 48, x = 49;
+	int i, j;
+	int a, b, c, d;
 
-	while (p < 58)
+	for (i = 0; i < 100; i++)
 	{
-		while (q < 58)
+		a = i / 10; /* doubles fnum */
+		b = i % 10; /* singles fnum */
+
+		for (j = 0; j < 100; j++)
 		{
-			while (y < 58)
+			c = j / 10; /* doubles snum */
+			d = j % 10; /* singles snum */
+
+			if (a < c || (a == c && b < d))
 			{
-				while (x < 58)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
 				{
-					putchar(p);
-					putchar(q);
-					putchar(' ');
-					putchar(y);
-					putchar(x);
-					if (!(p == 57 &&
-						q == 56 &&
-						y == 57 &&
-						x == 57))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					x++;
+					putchar(44);
+					putchar(32);
 				}
-				y++;
-				x = 48;
 			}
-			q++;
-			q = p;
-			x = q + 1;
 		}
-		p++;
-		q = 48;
-		y = p;
-		x = q+ 1;
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }
