@@ -15,7 +15,10 @@ int main(void)
 		  {
 		  	putchar(c);
 		  }
-		  else;
+		  else
+		  {
+			  continue;
+		  }
 		  c++;
 	  }
 	putchar('\n');
