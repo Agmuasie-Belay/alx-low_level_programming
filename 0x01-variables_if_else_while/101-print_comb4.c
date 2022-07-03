@@ -9,15 +9,18 @@ int main(void)
 {
 	int i = 0;
 	int j = 1;
+	int k;
 
 	for (i = 48; i <= 57; i++)
 	for (j = i; j <= 57; j++)
 	{
 	if (i == j)
 		continue;
+	for (k = j; k <= 57; k++)	
 	putchar(i);
 	putchar(j);
-	if (i == 56 && j == 57)
+	putchar(k);
+	if (i == 55 && j == 56 && k == 57)
 		break;
 	putchar(',');
 	putchar(' ');
