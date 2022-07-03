@@ -9,7 +9,7 @@ int main(void)
 {
 	int c;
 
-	for (c = 122;c >= 65;c--)
+	for (c = 122; c >= 65; c--)
 	{
 	putchar((char)c);
 	c++;
