@@ -12,7 +12,6 @@ int main(void)
 	for (c = 122; c >= 65; c--)
 	{
 	putchar((char)c);
-	c++;
 	}
 	putchar('\n');
 	return (0);
