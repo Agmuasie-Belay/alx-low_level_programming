@@ -1,16 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "holberton.h"
+
 /**
- * main - Entry point
+ * main - Print "Holberton"
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int n;
-  printf ("_putchar\n");
+	int i = 0;
+	char name_of_school[] = "_putchar";
 
+	while (i < 8)
+	{
+		_putchar(name_of_school[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
 
