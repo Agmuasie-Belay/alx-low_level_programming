@@ -1,8 +1,10 @@
 #include "main.h"
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
-*/
+ * main - Print "_putchar"
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
         int i;
